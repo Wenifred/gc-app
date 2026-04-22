@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { GcdsHeader, GcdsFooter } from '@gcds-core/components-react';
 import Home from './pages/Home';
 import About from './pages/About';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <GcdsHeader langHref="#" signatureVariant="colour" />
       <main>
         <Routes>
@@ -14,7 +14,7 @@ function App() {
         </Routes>
       </main>
       <GcdsFooter display="full" />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
